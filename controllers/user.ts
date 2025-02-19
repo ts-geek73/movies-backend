@@ -52,7 +52,7 @@ const userController = {
                 return res.status(401).send('Password Not Match');
             }
 
-            return res.status(200).send('Login SuccessFull');
+            return res.status(200).send(user);
             
         } catch (error) {
             return res.status(500).send(`Error: ${error}`);
